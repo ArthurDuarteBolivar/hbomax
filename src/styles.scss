@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary-color: #020228;
+$secondary-color: #ff00e5;
+$tertiary-color: #b535f6;
+$btn-bg-color-gradient: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%, transparent 50% );
+$btn-link-bg-color: #fff;
+$btn-link-color: #000;
+$card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+$divider-bg-color: linear-gradient(90deg,
+        #5516ba,
+        rgba(255, 0, 229, 0.5) 80%);
+$nav-bg-color: rgba(0, 0, 0, 0.3);
+$text-color: #fff;
+$link-color: #9e86ff;
+$form-bg-color: rgba(211, 211, 211, 0.06);
+$form-field-bg-color: rgba(0, 0, 0, 0.2);
+$form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+$form-field-placeholder: rgba(255, 255, 255, 0.7);
+$form-field-error: rgb(255, 76, 76);
+$font-secondary: "Quicksand", sans-serif;
+$font-primary: "Raleway", sans-serif;
+
+body {
+    background-color: $primary-color;
+    color: $text-color;
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*{
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $tertiary-color;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  
+  .footer__link {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 14px;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+    font-size: 0.875rem;
+  }
+  
+  .footer__link:hover {
+    color: var(--text-color);
+  }
+  
+  .footer__legal {
+    font-size: 0.75rem;
+    margin: 16px 0;
+    color: var(--link-color);
+  }
+  
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+.button--gradient{
+    border: none;
+    padding: 16px 40px;
+    font-weight: 700;
+    border-radius: 500px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $text-color;
+    background-image: $btn-bg-color-gradient;
+    background-size: 250%;
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+}

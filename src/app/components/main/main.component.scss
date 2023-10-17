@@ -1,0 +1,126 @@
+@import '../../../styles.scss';
+
+.header:after{
+    content: "";
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: -262px;
+    height: 250px;
+    background-image: linear-gradient(0deg, $primary-color, transparent);
+}
+
+
+.header{
+    margin-top: 50px;
+    padding: 100px 0 300px;
+    background-image: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);;
+    background-size: 400%;
+    animation: gradient 10s ease infinite alternate;
+    .header__content{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 40px;
+
+        .header__title{
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align: center;
+            span{
+                display: block;
+                font-size: 2rem;
+                font-weight: lighter;
+            }
+        }
+
+        .header__channels{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .divider{
+            width: 70%;
+            max-width: 700px;
+            height: 5px;
+            background-image: $divider-bg-color;
+        }
+
+        .offer{
+            text-align: center;
+            font-size: 1.25rem;
+            p{
+                margin: 0;
+                font-family: $font-secondary;
+            }
+            h1{
+                margin: 0;
+                font-family: $font-primary;
+                font-size: 2.5rem;
+                font-weight: bold;
+                span{
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .header__button{
+            animation: wiggle 2.2s linear infinite;
+        }
+
+        .text__small{
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: center;
+            max-width: 300px;
+        }
+    }
+}
+
+
+
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+@keyframes wiggle{
+    0%, 10% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}

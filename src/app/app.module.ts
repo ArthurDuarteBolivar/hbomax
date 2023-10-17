@@ -3,10 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CatalogComponent } from './components/catalog/catalog.component';
+import { PriceComponent } from './components/price/price.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    FooterComponent,
+    HeaderComponent,
+    CatalogComponent,
+    PriceComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
